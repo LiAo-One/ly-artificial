@@ -953,7 +953,7 @@ CREATE TABLE `sys_renewal`  (
   `renew_iccid` varchar(30) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT 'ICCID',
   `renew_statue` int(2) NULL DEFAULT NULL COMMENT '状态',
   `renew_operator` varchar(30) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '运营商',
-  `renew_type` int(2) NULL DEFAULT NULL COMMENT '卡号类别（1--》 流量卡 、 2 ---电信NB卡）',
+  `renew_type` int(2) NULL DEFAULT NULL COMMENT '卡号类别（1--> 流量卡 、 2 --> 电信NB卡）',
   `renew_setmeal` varchar(30) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '当前套餐',
   `meal_lastflow` double(10, 2) NULL DEFAULT NULL COMMENT '剩余流量',
   `version` int(10) NULL DEFAULT 1 COMMENT '乐观锁',
