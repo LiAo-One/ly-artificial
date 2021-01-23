@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ly.system.dao.SysFlowPoolMapper">
+
+    <resultMap id="BaseResultMap" type="com.ly.system.entity.SysFlowPool">
+        <id column="pool_id" property="poolId"/>
+        <result column="pool_code" property="poolCode"/>
+        <result column="setmeal_info" property="setmealInfo"/>
+        <result column="dest_operators" property="destOperators"/>
+        <result column="dest_apn" property="destApn"/>
+        <result column="pool_tit_flow" property="poolTitFlow"/>
+        <result column="pool_used_flow" property="poolUsedFlow"/>
+        <result column="pool_have_flow" property="poolHaveFlow"/>
+        <result column="pool_spread_flow" property="poolSpreadFlow"/>
+        <result column="pool_automatic" property="poolAutomatic"/>
+        <result column="member_amount" property="memberAmount"/>
+        <result column="dest_state" property="destState"/>
+        <result column="version" property="version"/>
+        <result column="deleted" property="deleted"/>
+        <result column="update_time" property="updateTime"/>
+        <result column="create_time" property="createTime"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        pool_id, pool_code, setmeal_info, dest_operators, dest_apn, pool_tit_flow, pool_used_flow, pool_have_flow, pool_spread_flow, pool_automatic, member_amount, dest_state, version, deleted, update_time, create_time
+    </sql>
+
+</mapper>

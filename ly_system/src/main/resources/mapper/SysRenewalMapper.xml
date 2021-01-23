@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ly.system.dao.SysRenewalMapper">
+
+    <resultMap id="BaseResultMap" type="com.ly.system.entity.SysRenewal">
+        <id column="renewal_apply_id" property="renewalApplyId"/>
+        <result column="renew_num" property="renewNum"/>
+        <result column="renew_iccid" property="renewIccid"/>
+        <result column="renew_statue" property="renewStatue"/>
+        <result column="renew_operator" property="renewOperator"/>
+        <result column="renew_type" property="renewType"/>
+        <result column="renew_setmeal" property="renewSetmeal"/>
+        <result column="meal_lastflow" property="mealLastflow"/>
+        <result column="version" property="version"/>
+        <result column="deleted" property="deleted"/>
+        <result column="update_time" property="updateTime"/>
+        <result column="create_time" property="createTime"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        renewal_apply_id, renew_num, renew_iccid, renew_statue, renew_operator, renew_type, renew_setmeal, meal_lastflow, version, deleted, update_time, create_time
+    </sql>
+
+</mapper>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ly.system.dao.SysCardFlowpoolMapper">
+
+    <resultMap id="BaseResultMap" type="com.ly.system.entity.SysCardFlowpool">
+        <id column="flowpool_card_id" property="flowpoolCardId"/>
+        <result column="flowpool_pond_id" property="flowpoolPondId"/>
+        <result column="flowpool_num" property="flowpoolNum"/>
+        <result column="flowpool_iccid" property="flowpoolIccid"/>
+        <result column="operators" property="operators"/>
+        <result column="card_type" property="cardType"/>
+        <result column="card_state" property="cardState"/>
+        <result column="card_tit_flow" property="cardTitFlow"/>
+        <result column="card_used_flow" property="cardUsedFlow"/>
+        <result column="card_have_flow" property="cardHaveFlow"/>
+        <result column="card_acti_date" property="cardActiDate"/>
+        <result column="card_timeout" property="cardTimeout"/>
+        <result column="card_batchnum" property="cardBatchnum"/>
+        <result column="card_relation1" property="cardRelation1"/>
+        <result column="card_user_name" property="cardUserName"/>
+        <result column="version" property="version"/>
+        <result column="deleted" property="deleted"/>
+        <result column="update_time" property="updateTime"/>
+        <result column="create_time" property="createTime"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        flowpool_card_id, flowpool_pond_id, flowpool_num, flowpool_iccid, operators, card_type, card_state, card_tit_flow, card_used_flow, card_have_flow, card_acti_date, card_timeout, card_batchnum, card_relation1, card_user_name, version, deleted, update_time, create_time
+    </sql>
+
+</mapper>

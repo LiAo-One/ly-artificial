@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ly.system.dao.SysDeviceMapper">
+
+    <resultMap id="BaseResultMap" type="com.ly.system.entity.SysDevice">
+        <id column="device_id" property="deviceId"/>
+        <result column="device_name" property="deviceName"/>
+        <result column="device_sn" property="deviceSn"/>
+        <result column="device_project" property="deviceProject"/>
+        <result column="device_grouping" property="deviceGrouping"/>
+        <result column="device_address" property="deviceAddress"/>
+        <result column="device_label" property="deviceLabel"/>
+        <result column="version" property="version"/>
+        <result column="deleted" property="deleted"/>
+        <result column="update_time" property="updateTime"/>
+        <result column="create_time" property="createTime"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        device_id, device_name, device_sn, device_project, device_grouping, device_address, device_label, version, deleted, update_time, create_time
+    </sql>
+
+</mapper>

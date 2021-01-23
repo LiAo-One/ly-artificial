@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ly.system.dao.SysSimrealnameMapper">
+
+    <resultMap id="BaseResultMap" type="com.ly.system.entity.SysSimrealname">
+        <id column="simrealname_id" property="simrealnameId"/>
+        <result column="annal_cardnum" property="annalCardnum"/>
+        <result column="annal_iccid" property="annalIccid"/>
+        <result column="dest_operators" property="destOperators"/>
+        <result column="state" property="state"/>
+        <result column="version" property="version"/>
+        <result column="deleted" property="deleted"/>
+        <result column="update_time" property="updateTime"/>
+        <result column="create_time" property="createTime"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        simrealname_id, annal_cardnum, annal_iccid, dest_operators, state, version, deleted, update_time, create_time
+    </sql>
+
+</mapper>

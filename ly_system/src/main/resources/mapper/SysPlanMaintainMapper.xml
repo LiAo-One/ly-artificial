@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ly.system.dao.SysPlanMaintainMapper">
+
+    <resultMap id="BaseResultMap" type="com.ly.system.entity.SysPlanMaintain">
+        <id column="plan_id" property="planId"/>
+        <result column="plan_name" property="planName"/>
+        <result column="plan_project" property="planProject"/>
+        <result column="plan_device_sn" property="planDeviceSn"/>
+        <result column="plan_student" property="planStudent"/>
+        <result column="plan_type" property="planType"/>
+        <result column="next_time" property="nextTime"/>
+        <result column="version" property="version"/>
+        <result column="deleted" property="deleted"/>
+        <result column="update_time" property="updateTime"/>
+        <result column="create_time" property="createTime"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        plan_id, plan_name, plan_project, plan_device_sn, plan_student, plan_type, next_time, version, deleted, update_time, create_time
+    </sql>
+
+</mapper>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ly.system.dao.SysCardlabelMapper">
+
+    <resultMap id="BaseResultMap" type="com.ly.system.entity.SysCardlabel">
+        <id column="label_id" property="labelId"/>
+        <result column="label_name" property="labelName"/>
+        <result column="member_amount" property="memberAmount"/>
+        <result column="version" property="version"/>
+        <result column="deleted" property="deleted"/>
+        <result column="update_time" property="updateTime"/>
+        <result column="create_time" property="createTime"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        label_id, label_name, member_amount, version, deleted, update_time, create_time
+    </sql>
+
+</mapper>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ly.system.dao.SysAlarmNoticeMapper">
+
+    <resultMap id="BaseResultMap" type="com.ly.system.entity.SysAlarmNotice">
+        <id column="notice_id" property="noticeId"/>
+        <result column="notice_name" property="noticeName"/>
+        <result column="device_sn" property="deviceSn"/>
+        <result column="notice_interval" property="noticeInterval"/>
+        <result column="notice_theway" property="noticeTheway"/>
+        <result column="notice_people" property="noticePeople"/>
+        <result column="version" property="version"/>
+        <result column="deleted" property="deleted"/>
+        <result column="update_time" property="updateTime"/>
+        <result column="create_time" property="createTime"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        notice_id, notice_name, device_sn, notice_interval, notice_theway, notice_people, version, deleted, update_time, create_time
+    </sql>
+
+</mapper>

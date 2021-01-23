@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ly.system.dao.SysCardDxnbMapper">
+
+    <resultMap id="BaseResultMap" type="com.ly.system.entity.SysCardDxnb">
+        <result column="dxnb_card_id" property="dxnbCardId"/>
+        <result column="dxnb_num" property="dxnbNum"/>
+        <result column="dxnbiccid" property="dxnbiccid"/>
+        <result column="dxnb_operators" property="dxnbOperators"/>
+        <result column="card_type" property="cardType"/>
+        <result column="card_state" property="cardState"/>
+        <result column="card_acti_date" property="cardActiDate"/>
+        <result column="card_timeout" property="cardTimeout"/>
+        <result column="card_remind" property="cardRemind"/>
+        <result column="card_pms" property="cardPms"/>
+        <result column="card_batchnum" property="cardBatchnum"/>
+        <result column="card_lable" property="cardLable"/>
+        <result column="card_note" property="cardNote"/>
+        <result column="card_relation1" property="cardRelation1"/>
+        <result column="card_user_name" property="cardUserName"/>
+        <result column="version" property="version"/>
+        <result column="deleted" property="deleted"/>
+        <result column="update_time" property="updateTime"/>
+        <result column="create_time" property="createTime"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        dxnb_card_id, dxnb_num, dxnbiccid, dxnb_operators, card_type, card_state, card_acti_date, card_timeout, card_remind, card_pms, card_batchnum, card_lable, card_note, card_relation1, card_user_name, card_relation2, version, deleted, update_time, create_time
+    </sql>
+
+</mapper>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ly.system.dao.SysMealChangeapplyMapper">
+
+    <resultMap id="BaseResultMap" type="com.ly.system.entity.SysMealChangeapply">
+        <id column="meal_change_apply_id" property="mealChangeApplyId"/>
+        <result column="card_num" property="cardNum"/>
+        <result column="card_iccid" property="cardIccid"/>
+        <result column="card_state" property="cardState"/>
+        <result column="card_opear" property="cardOpear"/>
+        <result column="card_type" property="cardType"/>
+        <result column="card_cur_meal" property="cardCurMeal"/>
+        <result column="card_have_flow" property="cardHaveFlow"/>
+        <result column="card_timeout" property="cardTimeout"/>
+        <result column="version" property="version"/>
+        <result column="deleted" property="deleted"/>
+        <result column="update_time" property="updateTime"/>
+        <result column="create_time" property="createTime"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        meal_change_apply_id, card_num, card_iccid, card_state, card_opear, card_type, card_cur_meal, card_have_flow, card_timeout, version, deleted, update_time, create_time
+    </sql>
+
+</mapper>
