@@ -1,7 +1,6 @@
 package com.ly.commons.utils;
 
 import java.util.Collection;
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class StringUtils extends org.apache.commons.lang3.StringUtils {

@@ -1,7 +1,7 @@
 package com.ly.commons.core.page;
 
-import com.ly.commons.constant.Constants;
-import com.ly.commons.utils.ServletUtils;
+import com.ly.commons.constant.*;
+import com.ly.commons.utils.*;
 
 /**
  * <p>
@@ -13,8 +13,8 @@ import com.ly.commons.utils.ServletUtils;
  */
 public class TableSupport {
 
-    public static PageDomain getPageDomain(){
-        PageDomain pageDomain =new PageDomain();
+    public static PageDomain getPageDomain() {
+        PageDomain pageDomain = new PageDomain();
         // 页码
         pageDomain.setPageNum(ServletUtils.getParameterToInt(Constants.PAGE_NUM));
         // 长度
@@ -27,7 +27,7 @@ public class TableSupport {
         return pageDomain;
     }
 
-    public static PageDomain buildPageRequest(){
+    public static PageDomain buildPageRequest() {
         return getPageDomain();
     }
 }

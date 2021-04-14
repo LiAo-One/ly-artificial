@@ -12,7 +12,6 @@
     <artifactId>ly_api_commons</artifactId>
 
     <dependencies>
-
         <!--Redis-->
         <dependency>
             <groupId>org.springframework.boot</groupId>

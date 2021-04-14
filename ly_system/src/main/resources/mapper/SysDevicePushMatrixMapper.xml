@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ly.system.dao.SysDevicePushMatrixMapper">
+
+    <resultMap id="BaseResultMap" type="com.ly.system.entity.SysDevicePushMatrix">
+        <id column="dpm_id" property="dpmId"/>
+        <result column="dpm_device" property="dpmDevice"/>
+        <result column="dpm_gate" property="dpmGate"/>
+        <result column="dpm_area" property="dpmArea"/>
+        <result column="dpm_device_id" property="dpmDeviceId"/>
+        <result column="dpm_device_name" property="dpmDeviceName"/>
+        <result column="dpm_project_id" property="dpmProjectId"/>
+        <result column="version" property="version"/>
+        <result column="deleted" property="deleted"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        dpm_id, dpm_device, dpm_gate, dpm_area, dpm_device_id, dpm_device_name, dpm_project_id, version, deleted, create_time, update_time
+    </sql>
+
+</mapper>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ly.system.dao.SysPushRulesMapper">
+
+    <resultMap id="BaseResultMap" type="com.ly.system.entity.SysPushRules">
+        <id column="pr_id" property="prId"/>
+        <result column="pr_project_id" property="prProjectId"/>
+        <result column="pr_host" property="prHost"/>
+        <result column="pr_port" property="prPort"/>
+        <result column="pr_address" property="prAddress"/>
+        <result column="pr_mode" property="prMode"/>
+        <result column="pr_push_rules" property="prPushRules"/>
+        <result column="version" property="version"/>
+        <result column="deleted" property="deleted"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        pr_id, pr_project_id, pr_host, pr_port, pr_address, pr_mode, pr_push_rules, version, deleted, create_time, update_time
+    </sql>
+
+</mapper>
